@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2218B66E-D625-4AA9-958C-5BF6487780C7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{F0DF8418-66E8-401B-B8F0-3C166EE49E00}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Algorithms", "Algorithms", "{DD23F366-E279-45B6-8574-87079EDAB904}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HsNsH.HackerRank.Challenges.Warmup", "HsNsH.HackerRank.Challenges.Warmup\HsNsH.HackerRank.Challenges.Warmup.csproj", "{B2BAB122-D06A-4F38-A3EF-3EA422CEA75E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DD23F366-E279-45B6-8574-87079EDAB904} = {2218B66E-D625-4AA9-958C-5BF6487780C7}
+		{B2BAB122-D06A-4F38-A3EF-3EA422CEA75E} = {DD23F366-E279-45B6-8574-87079EDAB904}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2BAB122-D06A-4F38-A3EF-3EA422CEA75E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2BAB122-D06A-4F38-A3EF-3EA422CEA75E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2BAB122-D06A-4F38-A3EF-3EA422CEA75E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2BAB122-D06A-4F38-A3EF-3EA422CEA75E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
