@@ -6,7 +6,7 @@ namespace Algorithms.Strings;
 public class CamelCaseTests
 {
     [Theory]
-    [InlineData("saveChangesInTheEditor", 5)]
+    [InlineData("saveChangesInTheEditorName", 6)]
     private void All_Tests(string input, int expected)
     {
         // Arrange
