@@ -20,6 +20,8 @@
 
     <ItemGroup>
         <ProjectReference Include="..\..\src\HsNsH.HackerRank.Challenges.Algorithms\HsNsH.HackerRank.Challenges.Algorithms.csproj"/>
+        <ProjectReference Include="..\..\src\HsNsH.HackerRank.Challenges.DataStructures\HsNsH.HackerRank.Challenges.DataStructures.csproj"/>
+        <ProjectReference Include="..\..\src\HsNsH.HackerRank.Challenges.InterviewKit\HsNsH.HackerRank.Challenges.InterviewKit.csproj"/>
     </ItemGroup>
 
 </Project>
