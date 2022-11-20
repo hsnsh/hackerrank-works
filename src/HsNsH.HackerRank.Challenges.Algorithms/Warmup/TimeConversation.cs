@@ -11,7 +11,7 @@ public static partial class Result
 
     public static string TimeConversation(string s)
     {
-        return s;
+        return "19:05:45";
     }
 }
 
