@@ -1,0 +1,34 @@
+name: .NETCore
+
+on:
+  push:
+    branches:
+      - master
+      - dev
+      - feat/*
+      - hot/*
+      - rel/*
+  pull_request:
+    types: [opened, synchronize, reopened]
+  workflow_dispatch:
+
+permissions:
+  pull-requests: read # allows SonarCloud to decorate PRs with analysis results
+
+jobs:
+  build:
+    name: Build And Test JOB
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 6.0.x
+      - name: Restore dependencies
+        run: dotnet restore
+      - name: Build
+        run: dotnet build --no-restore --no-incremental 
+      - name: Test
+        run: dotnet test --no-build --no-restore --logger:"console;verbosity=normal"
