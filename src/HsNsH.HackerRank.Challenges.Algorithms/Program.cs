@@ -1,4 +1,7 @@
-﻿namespace Algorithms;
+﻿using System.Reflection;
+using static System.Reflection.BindingFlags;
+
+namespace Algorithms;
 
 public static class Program
 {
@@ -20,18 +23,9 @@ public static class Program
                 passArgs = Array.Empty<string>();
             }
 
-            switch (args[0])
-            {
-                case "TimeConversation":
-                    Warmup.Solution.TimeConversation_Main(passArgs);
-                    break;
-                case "SimpleArraySum":
-                    Warmup.Solution.SimpleArraySum_Main(passArgs);
-                    break;
-                case "CamelCase":
-                    Strings.Solution.CamelCase_Main(passArgs);
-                    break;
-            }
+            var mainMethod = GetMainMethods(args[0]);
+            if (mainMethod == null) return 0;
+            mainMethod.Invoke(null, new object[] { passArgs });
 
             ShowChallengeResultsInConsole(testResultFileFullPath);
         }
@@ -88,5 +82,21 @@ public static class Program
         else Console.WriteLine("Challenge results file has not found!");
 
         Console.WriteLine("== TEST RESULTS ==");
+    }
+
+    private static MethodInfo? GetMainMethods(string mainMethodName)
+    {
+        var q = from t in Assembly.GetExecutingAssembly().GetTypes()
+            where t.IsClass && t.Namespace.StartsWith($"{typeof(Program).Namespace}.") && t.Name.Equals("Solution")
+            select t;
+
+        var mainMethods = new List<MethodInfo>();
+        foreach (var t in q.ToList())
+        {
+            Console.WriteLine($"Namespace: {t.Namespace} , Name: {t.Name}");
+            mainMethods.AddRange(t.GetMethods(Static | Public));
+        }
+
+        return mainMethods.FirstOrDefault(x => x.Name.Equals($"{mainMethodName}_Main"));
     }
 }

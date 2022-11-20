@@ -17,7 +17,7 @@ public static partial class Result
 
 internal static partial class Solution
 {
-    internal static void SimpleArraySum_Main(string[] args)
+    public static void SimpleArraySum_Main(string[] args)
     {
         TextWriter textWriter = new StreamWriter(Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
 
