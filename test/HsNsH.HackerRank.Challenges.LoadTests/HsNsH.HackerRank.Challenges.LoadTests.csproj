@@ -6,8 +6,6 @@
         <Nullable>enable</Nullable>
 
         <IsPackable>false</IsPackable>
-
-        <RootNamespace/>
     </PropertyGroup>
 
     <ItemGroup>
@@ -16,12 +14,6 @@
         <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3"/>
         <PackageReference Include="coverlet.collector" Version="3.1.2"/>
         <PackageReference Include="FluentAssertions" Version="6.8.0"/>
-    </ItemGroup>
-
-    <ItemGroup>
-        <ProjectReference Include="..\..\src\HsNsH.HackerRank.Challenges.Algorithms\HsNsH.HackerRank.Challenges.Algorithms.csproj"/>
-        <ProjectReference Include="..\..\src\HsNsH.HackerRank.Challenges.DataStructures\HsNsH.HackerRank.Challenges.DataStructures.csproj"/>
-        <ProjectReference Include="..\..\src\HsNsH.HackerRank.Challenges.InterviewKit\HsNsH.HackerRank.Challenges.InterviewKit.csproj"/>
     </ItemGroup>
 
 </Project>
