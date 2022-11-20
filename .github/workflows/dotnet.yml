@@ -4,10 +4,10 @@ on:
   push:
     branches:
       - master
-      - dev
-      - feat/*
-      - hot/*
-      - rel/*
+      # - dev
+      # - feat/*
+      # - hot/*
+      # - rel/*
   pull_request:
     types: [opened, synchronize, reopened]
   workflow_dispatch:
@@ -29,6 +29,6 @@ jobs:
       - name: Restore dependencies
         run: dotnet restore
       - name: Build
-        run: dotnet build --no-restore --no-incremental 
+        run: dotnet build --no-restore --no-incremental
       - name: Test
         run: dotnet test --no-build --no-restore --logger:"console;verbosity=normal"
