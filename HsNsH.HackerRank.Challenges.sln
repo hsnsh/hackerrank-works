@@ -8,6 +8,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HsNsH.HackerRank.Challenges
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HsNsH.HackerRank.Challenges.Algorithms", "src\HsNsH.HackerRank.Challenges.Algorithms\HsNsH.HackerRank.Challenges.Algorithms.csproj", "{D7408106-BE27-40FE-9485-FC0E5C33ED47}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HsNsH.HackerRank.Challenges.DataStructures", "src\HsNsH.HackerRank.Challenges.DataStructures\HsNsH.HackerRank.Challenges.DataStructures.csproj", "{44BDD522-0080-46F4-84F5-CE6ADDD86430}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HsNsH.HackerRank.Challenges.Core", "src\HsNsH.HackerRank.Challenges.Core\HsNsH.HackerRank.Challenges.Core.csproj", "{1B0603D1-0B3C-4F0E-9987-C6C7EBAAC893}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Base", "Base", "{ED1F50FD-BE11-47D7-8C5F-DACC4D141868}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -16,6 +22,9 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{00E829F9-C889-4DCE-B5E4-7F7C89844734} = {F0DF8418-66E8-401B-B8F0-3C166EE49E00}
 		{D7408106-BE27-40FE-9485-FC0E5C33ED47} = {2218B66E-D625-4AA9-958C-5BF6487780C7}
+		{44BDD522-0080-46F4-84F5-CE6ADDD86430} = {2218B66E-D625-4AA9-958C-5BF6487780C7}
+		{ED1F50FD-BE11-47D7-8C5F-DACC4D141868} = {2218B66E-D625-4AA9-958C-5BF6487780C7}
+		{1B0603D1-0B3C-4F0E-9987-C6C7EBAAC893} = {ED1F50FD-BE11-47D7-8C5F-DACC4D141868}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{00E829F9-C889-4DCE-B5E4-7F7C89844734}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -26,5 +35,13 @@ Global
 		{D7408106-BE27-40FE-9485-FC0E5C33ED47}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7408106-BE27-40FE-9485-FC0E5C33ED47}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D7408106-BE27-40FE-9485-FC0E5C33ED47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44BDD522-0080-46F4-84F5-CE6ADDD86430}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44BDD522-0080-46F4-84F5-CE6ADDD86430}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44BDD522-0080-46F4-84F5-CE6ADDD86430}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44BDD522-0080-46F4-84F5-CE6ADDD86430}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B0603D1-0B3C-4F0E-9987-C6C7EBAAC893}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B0603D1-0B3C-4F0E-9987-C6C7EBAAC893}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B0603D1-0B3C-4F0E-9987-C6C7EBAAC893}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B0603D1-0B3C-4F0E-9987-C6C7EBAAC893}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -13,6 +13,7 @@ public class CamelCaseTests
 
         // Act
         var result = Result.CamelCase(input);
+        result.Should().NotBe(int.MinValue);
 
         // Assert
         Execute.Assertion.ForCondition(result.Equals(expected))

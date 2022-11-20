@@ -1,6 +1,6 @@
 ﻿using Core;
 
-namespace Algorithms;
+namespace DataStructures;
 
 public static class Program
 {
