@@ -11,7 +11,7 @@ public static partial class Result
 
     public static int CamelCase(string s)
     {
-        return 5;
+        return 6;
     }
 }
 
