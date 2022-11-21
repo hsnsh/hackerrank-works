@@ -9,6 +9,7 @@ public static partial class Result
      * The function accepts following parameters:
      *  1. INTEGER k
      *  2. 2D_INTEGER_ARRAY contests
+     * test
      */
 
     public static int LuckBalance(int k, List<List<int>> contests)
