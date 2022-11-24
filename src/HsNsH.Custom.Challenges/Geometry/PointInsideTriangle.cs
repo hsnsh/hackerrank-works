@@ -15,9 +15,7 @@ public static partial class Result
     /* A function to check whether point P(x, y) lies
     inside the triangle formed by A(x1, y1),
     B(x2, y2) and C(x3, y3) */
-    public static bool PointInsideTriangle(int x1, int y1, int x2,
-        int y2, int x3, int y3,
-        int x, int y)
+    public static bool IsInsideTriangle(int x1, int y1, int x2, int y2, int x3, int y3, int x, int y)
     {
         /* Calculate area of triangle ABC */
         double A = Area(x1, y1, x2, y2, x3, y3);
@@ -43,7 +41,7 @@ internal static partial class Solution
         /* Let us check whether the point P(10, 15)
 lies inside the triangle formed by
 A(0, 0), B(20, 0) and C(10, 30) */
-        if (Result.PointInsideTriangle(0, 0, 20, 0, 10, 30, 10, 15))
+        if (Result.IsInsideTriangle(0, 0, 20, 0, 10, 30, 10, 15))
             Console.WriteLine("Inside");
         else
             Console.WriteLine("Not Inside");

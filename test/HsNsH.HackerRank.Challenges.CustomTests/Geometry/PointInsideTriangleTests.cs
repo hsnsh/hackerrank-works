@@ -17,7 +17,7 @@ public class PointInsideTriangleTests
         // Arrange
 
         // Act
-        var result = Result.PointInsideTriangle(x1, y1, x2, y2, x3, y3, x, y);
+        var result = Result.IsInsideTriangle(x1, y1, x2, y2, x3, y3, x, y);
         result.Should().Be(result);
 
         // Assert
