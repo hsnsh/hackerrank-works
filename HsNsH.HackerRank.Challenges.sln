@@ -16,7 +16,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Base", "Base", "{ED1F50FD-B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HsNsH.HackerRank.Challenges.InterviewKit", "src\HsNsH.HackerRank.Challenges.InterviewKit\HsNsH.HackerRank.Challenges.InterviewKit.csproj", "{487611BF-FB74-4F14-AF69-7B75ABBD0EB1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HsNsH.HackerRank.Challenges.LoadTests", "test\HsNsH.HackerRank.Challenges.LoadTests\HsNsH.HackerRank.Challenges.LoadTests.csproj", "{3DC92F86-148B-44BC-9849-62C61C129F9B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HsNsH.HackerRank.Challenges.CustomTests", "test\HsNsH.HackerRank.Challenges.CustomTests\HsNsH.HackerRank.Challenges.CustomTests.csproj", "{3DC92F86-148B-44BC-9849-62C61C129F9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HsNsH.Custom.Challenges", "src\HsNsH.Custom.Challenges\HsNsH.Custom.Challenges.csproj", "{155AA5CA-5454-4FEC-8D0A-8C8AD08FDBB3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +33,7 @@ Global
 		{1B0603D1-0B3C-4F0E-9987-C6C7EBAAC893} = {ED1F50FD-BE11-47D7-8C5F-DACC4D141868}
 		{487611BF-FB74-4F14-AF69-7B75ABBD0EB1} = {2218B66E-D625-4AA9-958C-5BF6487780C7}
 		{3DC92F86-148B-44BC-9849-62C61C129F9B} = {F0DF8418-66E8-401B-B8F0-3C166EE49E00}
+		{155AA5CA-5454-4FEC-8D0A-8C8AD08FDBB3} = {2218B66E-D625-4AA9-958C-5BF6487780C7}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{00E829F9-C889-4DCE-B5E4-7F7C89844734}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -57,5 +60,9 @@ Global
 		{3DC92F86-148B-44BC-9849-62C61C129F9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3DC92F86-148B-44BC-9849-62C61C129F9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3DC92F86-148B-44BC-9849-62C61C129F9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{155AA5CA-5454-4FEC-8D0A-8C8AD08FDBB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{155AA5CA-5454-4FEC-8D0A-8C8AD08FDBB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{155AA5CA-5454-4FEC-8D0A-8C8AD08FDBB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{155AA5CA-5454-4FEC-8D0A-8C8AD08FDBB3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
