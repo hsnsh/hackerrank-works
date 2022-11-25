@@ -16,14 +16,14 @@ public static partial class Result
 
         foreach (var word in words)
         {
-            var lowerCharValues = word.ToLower().Select(t => Convert.ToInt32(t) - 97);
+            var lowerCharValues = word.ToLower().Select(t => Convert.ToInt32(t) - Convert.ToInt32('a'));
             foreach (var charIndex in lowerCharValues)
             {
                 alphabet[charIndex]++;
             }
         }
 
-        return alphabet.Any(x => x < 1) ? "not pangram" : "pangram";
+        return alphabet.All(x => x > 0) ? "pangram" : "not pangram";
     }
 }
 
