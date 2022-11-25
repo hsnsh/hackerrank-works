@@ -22,18 +22,21 @@ public static partial class Result
 
     // This function prints all anagram pairs in a
     // given array of strings
-    public static void FindAllAnagrams(string[] arr, int n)
+    public static string[] FindAllAnagrams(string[] arr, int n)
     {
+        var result = new List<string>();
         for (var i = 0; i < n; i++)
         {
             for (var j = i + 1; j < n; j++)
             {
                 if (AreAnagram(arr[i], arr[j]))
                 {
-                    Console.WriteLine(arr[i] + " is anagram of " + arr[j]);
+                    result.Add(arr[i] + " is anagram of " + arr[j]);
                 }
             }
         }
+
+        return result.ToArray();
     }
 }
 
@@ -43,6 +46,8 @@ internal static partial class Solution
     {
         string[] arr = { "geeksquiz", "geeksforgeeks", "abcd", "forgeeksgeeks", "zuiqkeegs" };
         var n = arr.Length;
-        Result.FindAllAnagrams(arr, n);
+        var results = Result.FindAllAnagrams(arr, n);
+
+        foreach (var result in results) { Console.WriteLine(result); }
     }
 }
