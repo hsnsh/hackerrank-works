@@ -11,7 +11,18 @@ public static partial class Result
 
     public static int CamelCase(string s)
     {
-        return 6;
+        if (string.IsNullOrWhiteSpace(s)) return 0;
+
+        var result = 1;
+
+        for (var i = 1; i < s.Length; i++)
+        {
+            if (Convert.ToInt32(s[i]) >= Convert.ToInt32('A')
+                && Convert.ToInt32(s[i]) <= Convert.ToInt32('Z'))
+                result++;
+        }
+
+        return result;
     }
 }
 
